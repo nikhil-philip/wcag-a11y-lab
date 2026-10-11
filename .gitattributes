@@ -1,0 +1,6 @@
+# Store text files with LF line endings, whatever the OS.
+* text=auto eol=lf
+
+*.mp4 binary
+*.m4a binary
+*.png binary

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <!-- WCAG Accessibility Lab: a figure with outstretched arms, in the lab's blue -->
+  <rect width="32" height="32" rx="7" fill="#1d4ed8"/>
+  <circle cx="16" cy="7.5" r="2.75" fill="#ffffff"/>
+  <path d="M7.5 12.5 L24.5 12.5 M16 12.5 V18.5 L11.5 26 M16 18.5 L20.5 26" fill="none" stroke="#ffffff" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

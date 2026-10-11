@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order #4821 - SuperStore (WCAG 1.3.1 pass example)</title>
+    <link rel="stylesheet" href="info-relationships.css" />
+  </head>
+  <body>
+    <!-- Landmark: banner -->
+    <header class="site-header">
+      <p class="logo">SuperStore <span class="variant-label">Pass example</span></p>
+      <!-- Landmark: navigation -->
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#">Orders</a></li>
+          <li><a href="#">Returns</a></li>
+          <li><a href="#">Addresses</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Landmark: a second navigation, named "Breadcrumb" to tell it apart from the site navigation -->
+    <nav aria-label="Breadcrumb" class="breadcrumb">
+      <ol class="crumbs">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Orders</a></li>
+        <li><span class="crumb-current" aria-current="page">Order #4821</span></li>
+      </ol>
+    </nav>
+
+    <div class="layout">
+      <!-- Landmark: main -->
+      <main class="content">
+        <!-- Headings: real <h1>/<h2> in a logical order -->
+        <h1 class="page-title">Order #4821</h1>
+
+        <div class="card">
+          <h2 class="section-title">Order details</h2>
+          <!-- Key-value pairs: <dl> with a <dt> term and <dd> value for each pair -->
+          <dl class="details">
+            <div class="details-row">
+              <dt class="details-term">Order number</dt>
+              <dd class="details-value">#4821</dd>
+            </div>
+            <div class="details-row">
+              <dt class="details-term">Placed</dt>
+              <dd class="details-value">9 October 2026</dd>
+            </div>
+            <div class="details-row">
+              <dt class="details-term">Status</dt>
+              <dd class="details-value">Shipped</dd>
+            </div>
+          </dl>
+        </div>
+
+        <div class="card">
+          <h2 class="section-title">Items</h2>
+          <!-- Table: <caption>, and <th> with scope for column and row headers -->
+          <table class="items">
+            <caption class="items-caption">Items in this order</caption>
+            <thead>
+              <tr>
+                <th scope="col" class="items-head">Item</th>
+                <th scope="col" class="items-head">Qty</th>
+                <th scope="col" class="items-head">Price</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row" class="items-cell">Wireless mouse</th>
+                <td class="items-cell">1</td>
+                <td class="items-cell">₹799</td>
+              </tr>
+              <tr>
+                <th scope="row" class="items-cell">USB-C cable</th>
+                <td class="items-cell">2</td>
+                <td class="items-cell">₹398</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="card">
+          <h2 class="section-title">In the box</h2>
+          <!-- List: <ul> and <li> -->
+          <ul class="bullets">
+            <li>Wireless mouse</li>
+            <li>USB receiver</li>
+            <li>AA battery</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h2 class="section-title">Change delivery</h2>
+          <form>
+            <!-- Grouping: <fieldset> with a <legend> that holds the question -->
+            <fieldset>
+              <legend class="group-label">Delivery speed</legend>
+              <label class="option"><input type="radio" name="speed" checked /> Standard (3–5 days)</label>
+              <label class="option"><input type="radio" name="speed" /> Express (next day)</label>
+            </fieldset>
+            <button type="button" class="button">Update delivery</button>
+          </form>
+        </div>
+      </main>
+
+      <!-- Landmark: complementary, named -->
+      <aside class="card" aria-label="Order help">
+        <h2 class="section-title">Need help?</h2>
+        <p>Call 1800 123 4567, 9am–6pm, Monday to Saturday.</p>
+      </aside>
+    </div>
+
+    <!-- Landmark: contentinfo -->
+    <footer class="site-footer">
+      <p>
+        Pass example for WCAG 1.3.1 Info and Relationships.
+        <a href="info-relationships-fail.html">Open the fail version</a>.
+      </p>
+      <p><a href="../">Back to the WCAG Accessibility Lab</a></p>
+    </footer>
+  </body>
+</html>

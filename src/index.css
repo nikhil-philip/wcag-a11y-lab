@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@theme {
+  /* Radix exposes the panel's measured height for open/close animations. */
+  --animate-accordion-down: accordion-down 200ms ease-out;
+  --animate-accordion-up: accordion-up 200ms ease-out;
+
+  @keyframes accordion-down {
+    from { height: 0; }
+    to { height: var(--radix-accordion-content-height); }
+  }
+
+  @keyframes accordion-up {
+    from { height: var(--radix-accordion-content-height); }
+    to { height: 0; }
+  }
+
+  /* Audio visualiser bars in the 1.4.2 demo; each bar sets its own duration and delay. */
+  --animate-equalizer: equalizer 900ms ease-in-out infinite alternate;
+
+  @keyframes equalizer {
+    from { transform: scaleY(0.25); }
+    to { transform: scaleY(1); }
+  }
+
+  /* 2.2.2 news ticker: each headline slides in; the bar counts down to the next one (--ticker-ms). */
+  --animate-ticker-in: ticker-in 400ms ease-out;
+  --animate-ticker-progress: ticker-progress var(--ticker-ms) linear forwards;
+
+  @keyframes ticker-in {
+    from { opacity: 0; transform: translateX(1.5rem); }
+    to { opacity: 1; transform: translateX(0); }
+  }
+
+  @keyframes ticker-progress {
+    from { transform: scaleX(0); }
+    to { transform: scaleX(1); }
+  }
+}
