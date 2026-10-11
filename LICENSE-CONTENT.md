@@ -19,7 +19,7 @@ The written content is licensed under the [Creative Commons Attribution 4.0 Inte
 
 You may share and adapt it for any purpose, including commercially, as long as you give appropriate credit, link to the license and say whether you made changes. For example:
 
-> Adapted from the [WCAG Accessibility Lab](https://wcag-a11y-lab.pages.dev) by Nikhil Philip, licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
+> Adapted from the [WCAG Accessibility Lab](https://wcagexamples.nikhil-philip.workers.dev) by Nikhil Philip, licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
 
 The criterion descriptions are summaries written for the lab. The normative WCAG text belongs to W3C and is available from the [W3C WCAG 2.2 Recommendation](https://www.w3.org/TR/WCAG22/) under W3C's own terms.
 

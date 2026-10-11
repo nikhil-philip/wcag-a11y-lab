@@ -2,7 +2,7 @@
 
 **Interactive pass and fail examples for every WCAG 2.2 Level A and AA success criterion.**
 
-**Live site:** https://wcag-a11y-lab.pages.dev
+**Live site:** https://wcagexamples.nikhil-philip.workers.dev
 
 ![The 1.4.3 Contrast (Minimum) panel: a failing example with light grey text at 2.32:1 next to a passing example at 7.00:1, each with a live slider and an explanation.](docs/screenshot.png)
 
